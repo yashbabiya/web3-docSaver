@@ -1,0 +1,19 @@
+.home {
+  padding: 2em;
+  padding-top: 5em;
+  
+  .hero {
+    font-size: 4rem;
+    width: 15ch;
+    text-align: left;
+    line-height: 4.1rem;
+    position: relative;
+    
+    
+  }
+  .ship {
+    max-width: 80em;
+    transform: translateX(20%);
+    // transform: translateY(-10%);
+  }
+}

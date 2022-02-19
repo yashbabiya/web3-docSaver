@@ -1,0 +1,59 @@
+// @import '_variables';
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $dark;
+    padding: 2em;
+
+    .menu{
+        display: flex;
+        gap:1em;
+        li{
+            list-style: none;
+            @include underLine($dark);
+            a{
+                text-decoration: none;
+                color:$gray;
+            }
+        }
+    }
+
+    .account{
+        background-color: $white;
+        border-radius: 50%;
+        width: 4em;
+    }
+    .mint{
+        border:none;
+        background-color: rgb(56, 56, 56);
+        color: white;
+        padding: 1em 2em;
+        border-radius:2em;
+    }
+    .acc{
+        display: block;
+    }
+    .sandwich{
+        display: none;
+        position: relative;
+        background-color: black;
+        padding: 1em;
+        border-radius: 50%;
+        padding-bottom: 0.6em;
+
+        .sandwichEx{
+            position: absolute;
+            top: 60px;
+            left: 0;
+            padding: 1em;
+            background-color: black;
+            border-radius: 3em;
+            display: flex;
+            flex-direction: column;
+            gap: 2em;
+
+        }
+    }
+}

@@ -1,0 +1,216 @@
+.list{
+    width: 100%;
+    padding: 2em;
+    .FileList{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2em;
+    }
+    .cardCover{
+        // margin: 2em;
+    }
+    .accountInfo{
+        margin: 5em 0;
+
+    }
+    .top{
+        b{
+            @include underLine($green);
+        }
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        gap:2em;
+        
+        .left{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            // border-right: 1px solid green;
+            gap: 1em;
+            p{
+                word-break: break-all;
+                width: 15ch;
+            }
+        }
+        .right{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            .totalData{
+                width: 100%;
+                text-align: left;
+                font-size: 2em;
+            }
+            .search{
+                display: flex;
+                flex-direction: column;
+                text-align: left;
+                width: 100%;
+                margin-top: 1em;
+                p{
+                width: 100%;
+
+                }
+                div{
+                    display: flex;
+                width: 100%;
+
+                }
+            }
+        }
+    }
+    .account{
+        width: 10em;
+        background-color: $white;
+        border-radius: 50%;
+    }
+    h1{
+        width: 100%;
+        text-align: left;
+    }
+    a{
+        text-decoration: none;
+    }
+    .typeList{
+        display: flex;
+        flex-direction: row;
+        margin: 1em 0;
+        gap:1em;
+        flex-wrap: wrap;
+        
+    }
+    .typePill{
+        padding: .3em 2em;
+        border-radius: 5em;
+        background-color: $gray;
+        cursor: pointer;
+    }
+    .search{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        input{
+            width: 100%;
+            max-width: 30em;
+            padding: 1em;
+            border-radius: 1em;
+            height: 3rem;
+            border: none;
+            background-color: #C4C4C4;
+
+        }
+        button{
+            width: 4em;
+            height: 4em;
+            border-radius: 50%;
+            border: none;
+            color: $white;
+            
+            
+            background-color: rgb(26, 91, 95);
+        }
+    }
+    
+}
+.FileCard{
+    min-width: 15em;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1em;
+    background-color: $gray;
+    gap: 1em;
+    border-radius: 1em;
+
+    .top{
+        text-align: left;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        button{
+            background:none;
+            border: none;
+            cursor: pointer;
+            i{
+                font-size: 3rem;
+            }
+        }
+        i{
+            font-size: 5rem;
+            color:$white;
+        }
+        .preview{
+            width: 5rem;
+            height: 5rem;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    }
+    .bottom{
+        padding: 1em;
+        background-color: $white;
+        width: 100%;
+        border-radius: 1em;
+        color: black !important;
+        a{
+            color: black !important;
+
+        }
+        b{
+            font-size: 0.7em;
+            
+        }
+        .filename{
+            font-size:  1em;
+
+        }
+    }
+
+    
+}
+.pdf{
+    background-color:rgb(90, 21, 21) !important; 
+    i{
+        color:$red !important;
+    }
+    .bottom{
+        background-color: $red !important;
+    }
+}
+.ppt,.pptx{
+    background-color:rgb(90, 77, 21) !important; 
+    i{
+        color:$yellow !important;
+    }
+    .bottom{
+        background-color: $yellow !important;
+    }
+}
+.doc,.docx{
+    background-color:rgb(38, 101, 143) !important; 
+    i{
+        color:$lblue !important;
+    }
+    .bottom{
+        background-color: $lblue !important;
+    }
+}
+
+.xls,.xlsx,.csv{
+    background-color:rgb(21, 90, 52) !important;   
+    i{
+        color:$green !important;
+    }
+    .bottom{
+        background-color: $green !important;
+    }
+}
