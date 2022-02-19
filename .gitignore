@@ -1,6 +1,4 @@
-/node_modules
-/client/node_modules
+node_modules
 .secret
 
-/client/package-lock.json
 package-lock.json
